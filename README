@@ -14,7 +14,7 @@ To install:
       sudo easy_install http://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO-0.2.0.tar.gz
       sudo easy_install http://pypi.python.org/packages/source/a/aaargh/aaargh-0.3.tar.gz
 3. Copy the gpiocontroller to the /usr/local/bin and make it executable
-      wget http://github.com/punkle/gpio-terminal-controller/gpiocontroller
+      wget https://raw.github.com/punkle/gpio-terminal-controller/master/gpiocontroller
       sudo a+x gpiocontroller
       sudo mv gpiocontroller /usr/local/bin/.
 
