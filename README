@@ -1,0 +1,25 @@
+An application that controls the digital pins of the raspberry pi using the terminal.
+
+Dependancies
+name: RPi.GPIO
+url: http://pypi.python.org/pypi/RPi.GPIO/0.2.0
+
+name: aaargh
+url: http://pypi.python.org/pypi/aaargh/0.3
+
+To install:
+1. If you have not aleady done so, install python_setuptools
+      sudo apt-get install python_setuptools
+2. Install the dependancies
+      sudo easy_install http://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO-0.2.0.tar.gz
+      sudo easy_install http://pypi.python.org/packages/source/a/aaargh/aaargh-0.3.tar.gz
+3. Copy the gpiocontroller to the /usr/local/bin and make it executable
+      wget http://github.com/punkle/gpio-terminal-controller/gpiocontroller
+      sudo a+x gpiocontroller
+      sudo mv gpiocontroller /usr/local/bin/.
+
+To use the application:
+switchOn a digital pin
+      sudo gpiocontroller switchOn --pinno 12
+switchOff a digital pin
+      sudo gpiocontroller switchOff --pinno 12
